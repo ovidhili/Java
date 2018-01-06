@@ -1,0 +1,21 @@
+
+public class Str4 {
+
+	public static void main(String[] args) {
+		String s="CatDog";
+		StringBuffer sb1=new StringBuffer(s);
+		int len=s.length();
+		if(len%2==0)
+		{
+			System.out.println( sb1.substring(0,len/2));
+			
+	    }
+		else
+		{
+			System.out.println("Null");
+		}
+		
+
+}
+
+}

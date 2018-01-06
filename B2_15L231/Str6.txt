@@ -1,0 +1,23 @@
+
+public class Str6 {
+
+	public static void main(String[] args) 
+	  {
+		
+        String s1="hi";
+        String s2="hello";
+        StringBuffer sb1=new StringBuffer(s1);
+        StringBuffer sb2=new StringBuffer(s2);
+        int len1=s1.length();
+        int len2=s2.length();
+        if(len1<len2)
+        {
+        	System.out.println(s1.concat(s2).concat(s1));
+        }
+        else
+        {
+        	System.out.println(s2.concat(s1).concat(s2));
+        }
+	 }
+
+}

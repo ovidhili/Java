@@ -1,0 +1,24 @@
+public class Str9 {
+
+	public static void main(String[] args)
+	{
+		String s="ab**cd";
+		StringBuffer sb=new StringBuffer(s);
+		int len=s.length();
+		int index=0;	
+	    index=sb.indexOf("*");
+	    char c1=sb.charAt(index);
+	    char c2=sb.charAt(index+1);
+	    if(c1=='*' && c2=='*')
+	    {
+		  System.out.print(sb.delete(index-1,index+3).toString());
+		
+	    }
+	    else
+	    {
+	    	System.out.print(sb.delete(index-1,index+2).toString());
+	    }
+
+	}
+
+}

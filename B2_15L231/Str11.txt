@@ -1,0 +1,22 @@
+
+public class Str11 {
+
+	public static void main(String[] args) 
+	{
+
+		   String s1="abc";
+		   String s2="xyz";
+		   int len=0;
+		   StringBuffer sb1=new StringBuffer();
+			int len1=s1.length();
+			int len2=s2.length();
+				for(int i=0;i<len1;i++)
+				{
+					    sb1.append(s1.charAt(i));
+					    sb1.append(s2.charAt(i));
+						
+				}
+				System.out.println(sb1);
+	}
+
+}

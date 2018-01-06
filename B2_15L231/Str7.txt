@@ -1,0 +1,29 @@
+
+public class Str7
+ {
+	public static void main(String[] args) 
+	  {
+		String s="xhix";
+		 StringBuffer sb1=new StringBuffer(s);
+		 int len=s.length();
+			char c1=sb1.charAt(0);
+			char c2=sb1.charAt(len-1);
+			if(c1=='x'&&c2=='x')
+			{
+			    sb1.deleteCharAt(0).toString();
+			    sb1.deleteCharAt(len-2).toString();
+			 }
+			else if(c1=='x')
+			{
+				
+				sb1.deleteCharAt(0).toString();
+			}
+			 else 
+			{
+			  sb1.deleteCharAt(len-1).toString();
+			}
+			
+			System.out.println(sb1);
+		 
+	  }
+}
